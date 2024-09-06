@@ -1,60 +1,30 @@
-### Electrical Circuit Calculations
+Here's the formatted math question using markdown:
 
-#### Given:
-- **Ohm's Law:** 
-  \[
-  U = R \cdot I
-  \]
+Given the following electrical circuit problem, solve for the total current ($I_t$) and the individual currents through each resistor ($I_{r1}$, $I_{r2}$, and $I_{r3}$).
 
-- **Total Resistance (Rt) for parallel resistors:**
-  \[
-  \frac{1}{Rt} = \frac{1}{r1} + \frac{1}{r2} + \frac{1}{r3}
-  \]
+Ohm's Law:
+\[ U = R \times I \]
 
-#### Calculations:
-1. **Calculate Rt for given resistances:**
-   \[
-   \frac{1}{Rt} = \frac{1}{0.5} + \frac{1}{0.25} + \frac{1}{0.1666666666666667}
-   \]
-   \[
-   \frac{1}{Rt} = 2 + 4 + 6 = 12
-   \]
-   \[
-   Rt = \frac{12}{11} \approx 1.0909 \text{ ohms}
-   \]
+The total resistance ($R_t$) for parallel resistors is given by:
+\[ R_t = \frac{1}{\frac{1}{r_1} + \frac{1}{r_2} + \frac{1}{r_3}} \]
 
-2. **Voltage (U) across the circuit:**
-   \[
-   U = Rt \cdot I
-   \]
-   Assuming \( I \) is the total current \( It \):
-   \[
-   U = 1.0909 \cdot It
-   \]
+Given values:
+- $U_t = 12 \, V$
+- $r_1 = 2 \, \Omega$
+- $r_2 = 4 \, \Omega$
+- $r_3 = 6 \, \Omega$
 
-3. **Total Current (It) from voltage and total resistance:**
-   \[
-   It = \frac{U}{Rt} = \frac{12}{1.0909} \approx 11 \text{ A}
-   \]
+First, calculate the total resistance ($R_t$):
+\[ R_t = \frac{1}{\frac{1}{2} + \frac{1}{4} + \frac{1}{6}} = \frac{1}{0.5 + 0.25 + 0.1666666666666667} = \frac{1}{0.9166666666666667} \approx 1.090909090909091 \, \Omega \]
 
-4. **Current through each resistor:**
-   - For \( r1 = 2 \text{ ohms} \):
-     \[
-     Ir1 = \frac{U}{r1} = \frac{12}{2} = 6 \text{ A}
-     \]
-   - For \( r2 = 4 \text{ ohms} \):
-     \[
-     Ir2 = \frac{U}{r2} = \frac{12}{4} = 3 \text{ A}
-     \]
-   - For \( r3 = 6 \text{ ohms} \):
-     \[
-     Ir3 = \frac{U}{r3} = \frac{12}{6} = 2 \text{ A}
-     \]
+Next, use Ohm's Law to find the total current ($I_t$):
+\[ U = R_t \times I_t \]
+\[ I_t = \frac{U_t}{R_t} = \frac{12}{1.090909090909091} \approx 11 \, A \]
 
-5. **Verify Total Current:**
-   \[
-   IrT = Ir1 + Ir2 + Ir3 = 6 \text{ A} + 3 \text{ A} + 2 \text{ A} = 11 \text{ A}
-   \]
+Finally, calculate the individual currents through each resistor:
+\[ I_{r1} = \frac{U_t}{r_1} = \frac{12}{2} = 6 \, A \]
+\[ I_{r2} = \frac{U_t}{r_2} = \frac{12}{4} = 3 \, A \]
+\[ I_{r3} = \frac{U_t}{r_3} = \frac{12}{6} = 2 \, A \]
 
-#### Conclusion:
-- The calculations confirm that the total current \( It \) through the circuit matches the sum of the individual currents through each resistor, validating Ohm's law and the parallel resistance formula.
+Verify that the sum of the individual currents equals the total current:
+\[ I_{rT} = I_{r1} + I_{r2} + I_{r3} = 6 \, A + 3 \, A + 2 \, A = 11 \, A \]
